@@ -4,7 +4,7 @@ void main() {
   runApp(const PerguntasApp());
 }
 
-class PerguntasAppState extends State<PerguntasApp> {
+class _PerguntasAppState extends State<PerguntasApp> {
   var perguntaSelecionada = 0;
 
   void responder() {
@@ -52,7 +52,7 @@ class PerguntasApp extends StatefulWidget {
   const PerguntasApp({super.key});
 
   @override
-  PerguntasAppState createState() {
-    return PerguntasAppState();
+  State<PerguntasApp> createState() {
+    return _PerguntasAppState();
   }
 }
